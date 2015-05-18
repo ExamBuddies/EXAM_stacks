@@ -5,8 +5,8 @@ public class StackArray <E> implements Stack<E>{
 	private int top;
 	
 	public StackArray(){
-		array = new Object[2];
-		top=0;
+		array = new Object[7];
+		top=-1;
 	}
 
 	@Override

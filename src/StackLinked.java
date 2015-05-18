@@ -2,6 +2,10 @@
 public class StackLinked <E> implements Stack<E>{
 	
 	private SLnode top;
+	
+	public StackLinked(){
+		
+	}
 
 	@Override
 	public E pop() {
