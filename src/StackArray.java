@@ -11,7 +11,7 @@ public class StackArray <E> implements Stack<E>{
 
 	@Override
 	public E pop() {
-		if(top < 1){
+		if(top < 0){
 //			throw new IndexOutOfBoundsException();
 			return null;
 		}
