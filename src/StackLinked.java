@@ -1,22 +1,24 @@
 
 public class StackLinked <E> implements Stack<E>{
 	
-	private SLnode top;
+	private SLnode<E> top;
 	
 	public StackLinked(){
-		
+		top = new SLnode<E>(null);
 	}
 
 	@Override
 	public E pop() {
-		// TODO Auto-generated method stub
-		return null;
+		SLnode<E> topNode = top;
+		top = topNode.next;
+		topNode.next = null;
+		return topNode.data;
 	}
 
 	@Override
 	public void push(E item) {
-		// TODO Auto-generated method stub
-		
+		SLnode<E> nextNode = top;
+		top = new SLnode<E>(item,nextNode);
 	}
 
 }
