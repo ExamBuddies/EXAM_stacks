@@ -1,3 +1,4 @@
+package stacks;
 
 public class StackArray <E> implements Stack<E>{
 	

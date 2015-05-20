@@ -1,3 +1,4 @@
+package stacks;
 
 public class SLnode <E> {
 	// node for linked list implementation of stack

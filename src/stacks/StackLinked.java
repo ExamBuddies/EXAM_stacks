@@ -1,3 +1,4 @@
+package stacks;
 
 public class StackLinked <E> implements Stack<E>{
 	
