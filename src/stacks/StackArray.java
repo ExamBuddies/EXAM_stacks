@@ -4,11 +4,11 @@ public class StackArray <E> implements Stack<E>{
 	
 	// implementation of stack with array
 	
-	private Object[] array; // Cannot have generic arrays in java
+	private E[] array; 
 	private int top;
 	
 	public StackArray(){
-		array = new Object[7];
+		array = (E[])new Object[7];
 		top=-1;
 	}
 
@@ -18,7 +18,7 @@ public class StackArray <E> implements Stack<E>{
 //			throw new IndexOutOfBoundsException();
 			return null;
 		}
-		E element = (E)array[top];
+		E element = array[top];
 		array[top] = null;
 		top--;
 		return element;
@@ -34,8 +34,8 @@ public class StackArray <E> implements Stack<E>{
 	}
 	
 	private void resize(){
-		Object[] oldArr = array;
-		array = new Object[array.length * 2];
+		E[] oldArr = array;
+		array = (E[])new Object[array.length * 2];
 		for(int i = 0; i < oldArr.length; i++){
 			array[i] = oldArr[i];
 		}
