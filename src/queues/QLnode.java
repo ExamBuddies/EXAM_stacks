@@ -1,6 +1,9 @@
 package queues;
 
 public class QLnode <E>{
+	
+	// Node for linked list implementation of queue
+	
 	public E data;
 	public QLnode previous;
 	

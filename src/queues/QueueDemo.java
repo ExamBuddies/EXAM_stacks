@@ -11,5 +11,13 @@ public class QueueDemo {
 		System.out.println(queueLinked.dequeue());
 		System.out.println(queueLinked.dequeue());
 		System.out.println(queueLinked.dequeue());
+		System.out.println(queueLinked.dequeue());
+		System.out.println(queueLinked.dequeue());
+		queueLinked.enqueue(1);
+		queueLinked.enqueue(2);
+		queueLinked.enqueue(3);
+		System.out.println(queueLinked.dequeue());
+		System.out.println(queueLinked.dequeue());
+		System.out.println(queueLinked.dequeue());
 	}
 }
