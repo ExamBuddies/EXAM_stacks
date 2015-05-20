@@ -1,6 +1,8 @@
 
 public class StackLinked <E> implements Stack<E>{
 	
+	// Implementation of stack with linked list.
+	
 	private SLnode<E> top;
 	
 	public StackLinked(){

@@ -1,6 +1,8 @@
 
 public class StackArray <E> implements Stack<E>{
 	
+	// implementation of stack with array
+	
 	private Object[] array; // Cannot have generic arrays in java
 	private int top;
 	
